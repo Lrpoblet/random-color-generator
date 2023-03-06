@@ -1,0 +1,62 @@
+@keyframes fade {
+  0% {
+    color: #40407a;
+  }
+  25% {
+    color: #706fd3;
+  }
+  50% {
+    color: #f7f1e3;
+  }
+  75% {
+    color: #34ace0;
+  }
+  100% {
+    color: #33d9b2;
+  }
+}
+
+.body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.title {
+  animation: fade 10s infinite alternate-reverse;
+  text-shadow: 1px 1px 2px black;
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: rgb(41, 207, 135);
+}
+
+.button:active {
+  background-color: rgb(41, 207, 135);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.color {
+  font-size: 24px;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+}
